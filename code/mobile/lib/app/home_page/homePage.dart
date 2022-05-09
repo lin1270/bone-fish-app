@@ -1,4 +1,5 @@
 import 'package:bone_fish_app/common/ui/components/BasePage.dart';
+import 'package:bone_fish_app/modules/dict/DictSwiperWidget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -45,12 +46,7 @@ class _HomePageState extends State<HomePage> {
               right: 0,
               top: 0,
               bottom: _bottomHeight,
-              child: Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xffaaaaaa),
-                  ),
-                  child: Text('dict'),
-                ),
+              child: const DictSwiperWidget(),
             ),
             
             // operation bar
@@ -84,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                   Expanded(
                     flex: 1,
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 6, 4, 6),
+                      padding: const EdgeInsets.fromLTRB(0, 6, 10, 6),
                       child: TextField(
                         onSubmitted: onSearch,
                         textInputAction: TextInputAction.search,
