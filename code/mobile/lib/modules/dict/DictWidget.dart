@@ -45,7 +45,8 @@ class _DictWidgetState extends State<DictWidget>
 
   void _loadSearchResult() {
     if (_url.isNotEmpty) {
-      _webViewController?.loadUrl(urlRequest: URLRequest(url: Uri.parse(_url)));
+      _webViewController?.loadUrl(
+          urlRequest: URLRequest(url: Uri.parse(Uri.encodeFull(_url))));
     }
   }
 
@@ -104,6 +105,8 @@ class _DictWidgetState extends State<DictWidget>
                           crossPlatform:
                               InAppWebViewOptions(transparentBackground: true)),
                       onWebViewCreated: _onWebViewCreated,
+                      // initialUrlRequest:
+                      //     URLRequest(url: Uri.parse('https://www.baidu.com')),
                     ))))
       ],
     );
