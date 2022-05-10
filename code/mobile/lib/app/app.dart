@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
-import 'package:bone_fish_app/app/home_page/homePage.dart';
-import 'package:bone_fish_app/common/config/app.dart';
+import 'package:bonefishapp/app/home_page/homePage.dart';
+import 'package:bonefishapp/common/config/app.dart';
 
 class BoneFishApp extends StatelessWidget {
   const BoneFishApp({super.key});
@@ -14,7 +13,7 @@ class BoneFishApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Config.themeColor,
         brightness: Brightness.light, //控件颜色模式dark
-        primaryColor: Colors.black,//设置主题色为黑色即可
+        primaryColor: Colors.black, //设置主题色为黑色即可
       ),
       home: const HomePage(title: 'bone-fish-app'),
     );

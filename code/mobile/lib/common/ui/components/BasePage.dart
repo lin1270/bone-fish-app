@@ -1,5 +1,4 @@
-
-import 'package:bone_fish_app/common/config/app.dart';
+import 'package:bonefishapp/common/config/app.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

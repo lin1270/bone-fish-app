@@ -1,5 +1,4 @@
-
-import 'package:bone_fish_app/modules/dict/BaseDict.dart';
+import 'package:bonefishapp/modules/dict/BaseDict.dart';
 
 class WebDict extends BaseDict {
   String url;
@@ -16,13 +15,11 @@ class WebDict extends BaseDict {
 
   @override
   Future<DictSearchResult> search(String word) {
-    return Future((){
+    return Future(() {
       return DictSearchResult(
-        word: word,
-        trueWord: word,
-        content:url.replaceAll(RegExp(r'${url}'), 'word')
-      );
+          word: word,
+          trueWord: word,
+          content: url.replaceAll(RegExp(r'${url}'), 'word'));
     });
   }
-
 }
