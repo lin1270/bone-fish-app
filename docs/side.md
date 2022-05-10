@@ -9,4 +9,5 @@
     * [成語典](/app/dict/chengyudian.md)
     * [六書通](/app/dict/liushutong.md)
 
+* [使用的開源庫](/app/open-source.md)
 * [Todo](/app/todo.md)
