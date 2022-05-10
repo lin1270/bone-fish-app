@@ -1,7 +1,7 @@
 import 'package:bonefishapp/modules/dict/BaseDict.dart';
 import 'package:bonefishapp/modules/dict/DictManager.dart';
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:bonefishapp/common/event_center/EventCenter.dart';
 import 'package:bonefishapp/common/event_center/Events.dart';
 
@@ -27,7 +27,7 @@ class _DictWidgetState extends State<DictWidget>
 
   final double topHeight = 48;
   String _url = '';
-  WebViewController? _webViewController;
+  InAppWebViewController? _webViewController;
 
   void _onLoveBtnClicked() {}
   void _onDictTitleTaped() {
@@ -45,11 +45,11 @@ class _DictWidgetState extends State<DictWidget>
 
   void _loadSearchResult() {
     if (_url.isNotEmpty) {
-      _webViewController?.loadUrl(_url);
+      _webViewController?.loadUrl(urlRequest: URLRequest(url: Uri.parse(_url)));
     }
   }
 
-  void _onWebViewCreated(WebViewController controller) {
+  void _onWebViewCreated(InAppWebViewController controller) {
     _webViewController = controller;
     _loadSearchResult();
   }
@@ -97,11 +97,14 @@ class _DictWidgetState extends State<DictWidget>
             flex: 1,
             child: Padding(
                 padding: const EdgeInsets.only(left: 8, right: 8),
-                child: WebView(
-                  backgroundColor: const Color(0xffDDDDDD),
-                  onWebViewCreated: _onWebViewCreated,
-                  javascriptMode: JavascriptMode.unrestricted,
-                )))
+                child: Container(
+                    decoration: const BoxDecoration(color: Color(0xffdddddd)),
+                    child: InAppWebView(
+                      initialOptions: InAppWebViewGroupOptions(
+                          crossPlatform:
+                              InAppWebViewOptions(transparentBackground: true)),
+                      onWebViewCreated: _onWebViewCreated,
+                    ))))
       ],
     );
   }

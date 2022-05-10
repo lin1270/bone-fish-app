@@ -37,7 +37,7 @@ dependencies:
   awesome_dialog: ^2.2.1
   card_swiper: ^2.0.3
   uuid: ^3.0.6
-  webview_flutter: ^3.0.2
+  flutter_inappwebview: ^5.4.3
 
 dev_dependencies:
   flutter_test:
