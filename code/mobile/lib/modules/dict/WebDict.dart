@@ -19,7 +19,7 @@ class WebDict extends BaseDict {
       return DictSearchResult(
           word: word,
           trueWord: word,
-          content: url.replaceAll(RegExp(r'${url}'), 'word'));
+          content: url.replaceAll(RegExp(r'\$\{word\}'), word));
     });
   }
 }

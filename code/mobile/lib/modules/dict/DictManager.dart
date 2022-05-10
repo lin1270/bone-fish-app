@@ -14,6 +14,9 @@ class DictManager {
   final List<BaseDict> _dicts = List.empty(growable: true);
   List<BaseDict> get dicts => _dicts;
 
+  late BaseDict _currDict;
+  BaseDict get getCurrDict => _currDict;
+
   void _init() {
     _dicts.add(WebDict(
         id: "1",
@@ -32,5 +35,11 @@ class DictManager {
         name: "康熙字典",
         url:
             r"http://www.maiyuren.com/dict/single.html?inapp=1&word=${word}&dict=5"));
+  }
+
+  void setCurrDict(BaseDict dict) {
+    _currDict = dict;
+    // todo:
+    // save
   }
 }

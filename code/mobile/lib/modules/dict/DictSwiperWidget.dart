@@ -1,3 +1,4 @@
+import 'package:bonefishapp/modules/dict/BaseDict.dart';
 import 'package:bonefishapp/modules/dict/DictManager.dart';
 import 'package:bonefishapp/modules/dict/DictWidget.dart';
 import 'package:flutter/material.dart';
@@ -14,8 +15,15 @@ class DictSwiperWidget extends StatefulWidget {
 
 class _DictSwiperWidgetState extends State<DictSwiperWidget> {
   _DictSwiperWidgetState() {
+    _dictChanged(0);
+
     // todo:
     // event_center收到詞典變更，刷新
+  }
+
+  void _dictChanged(index) {
+    BaseDict dict = DictManager.instance().dicts.elementAt(index);
+    DictManager.instance().setCurrDict(dict);
   }
 
   @override
@@ -25,6 +33,7 @@ class _DictSwiperWidgetState extends State<DictSwiperWidget> {
         return DictWidget(dict: DictManager.instance().dicts.elementAt(index));
       },
       itemCount: DictManager.instance().dicts.length,
+      onIndexChanged: _dictChanged,
     );
   }
 }

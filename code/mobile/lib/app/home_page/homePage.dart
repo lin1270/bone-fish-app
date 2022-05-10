@@ -1,3 +1,5 @@
+import 'package:bonefishapp/common/event_center/EventCenter.dart';
+import 'package:bonefishapp/common/event_center/Events.dart';
 import 'package:bonefishapp/common/ui/components/BasePage.dart';
 import 'package:bonefishapp/modules/dict/DictSwiperWidget.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +25,7 @@ class _HomePageState extends State<HomePage> {
   void onNextHistoryBtnClicked() {}
 
   void onSearch(String value) {
-    print('..va $value');
+    EventCenter.emit(Events.dict_search, {"word": value});
   }
 
   @override
