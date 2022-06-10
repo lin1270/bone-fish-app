@@ -2,11 +2,11 @@
 
 <hr></hr>
 
-<img src="./images_ReadME/boneFish_Logo.png" alt="image-20220610221058843" style="zoom: 25%;" />
+<img src="./images_ReadME/boneFish_Logo.png" alt="image-20220610221058843" width = "300" height = "300"/>
 
-#### 字典開發主要以 Flutter(前端語言)及 midwayjs(後端語言)。
+### 字典開發主要以 Flutter(前端語言)及 midwayjs(後端語言)。
 
-#### ：：總覽目標：：
+### 總覽目標：
 
 - **字詞查詢：**
   - 華夏文字
@@ -82,13 +82,13 @@
 
 ## 字典介面意想圖
 
-<img src="./images_ReadME/ideaUI1.png" alt="image-20220610220724844" style="zoom:25%;" />
+<img src="./images_ReadME/ideaUI1.png" alt="image-20220610220724844" width = "270" height = "600" />
 
 ↑ 可以在進入界面，引導用戶進行起始設定(Initialize)，比如選擇甚麼字典、界面風格、加入交流等基本設置。
 
-<img src="./images_ReadME/ideaUI2.png" alt="image-20220610220939386" style="zoom:25%;" />
+<img src="./images_ReadME/ideaUI2.png" alt="image-20220610220939386" width = "600" height = "847" />
 
-<img src="./images_ReadME/ideaUI3.png" alt="image-20220610221005873" style="zoom:25%;" />
+<img src="./images_ReadME/ideaUI3.png" alt="image-20220610221005873" width = "600" height = "847" />
 
 ↑ 詳見上方右側解述
 
@@ -143,9 +143,10 @@ https://rmda.kulib.kyoto-u.ac.jp/item/rb00013243#?c=0&m=0&s=0&cv=0&r=0&xywh=-462
 -- 減字譜(曲譜造用)
 ```
 
-#### 加入內容基本可以從 github HanZiUrl 連結搜查
+### 加入內容基本可以從 github HanZiUrl 連結搜查
 
-#### 有文學朋友建議：古代文獻( e.g. 地方志 )中詞語收錄釋讀為少，可以考慮增加補充
+### 有文學朋友建議：古代文獻( e.g. 地方志 )中詞語收錄釋讀為少，可以考慮增加補充
+<br>
 
 **文字搜索功能**
 
@@ -184,7 +185,7 @@ https://rmda.kulib.kyoto-u.ac.jp/item/rb00013243#?c=0&m=0&s=0&cv=0&r=0&xywh=-462
 
 #### 古碑文查詢閱讀
 
-<img src="./images_ReadME/inscription.jpg" alt="image-20220610233832121" style="zoom:25%;" />
+<img src="./images_ReadME/inscription.jpg" alt="image-20220610233832121" width = "270" height = "600" />
 
 ↑ 圖片+文字釋讀
 
@@ -206,7 +207,7 @@ https://rmda.kulib.kyoto-u.ac.jp/item/rb00013243#?c=0&m=0&s=0&cv=0&r=0&xywh=-462
 
 #### 外掛程式
 
--  考慮可以編造瀏覽器extension
+- 考慮可以編造瀏覽器extension
 
 - 讓用戶直接雙擊字詞查核
 
