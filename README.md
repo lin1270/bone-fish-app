@@ -2,7 +2,7 @@
 
 <hr></hr>
 
-<img src="C:\Users\oscar\AppData\Roaming\Typora\typora-user-images\image-20220610221058843.png" alt="image-20220610221058843" style="zoom: 25%;" />
+<img src="./images_ReadME/boneFish_Logo.png" alt="image-20220610221058843" style="zoom: 25%;" />
 
 #### 字典開發主要以 Flutter(前端語言)及 midwayjs(後端語言)。
 
@@ -82,17 +82,17 @@
 
 ## 字典介面意想圖
 
-<img src="C:\Users\oscar\AppData\Roaming\Typora\typora-user-images\image-20220610220724844.png" alt="image-20220610220724844" style="zoom:25%;" />
+<img src="./images_ReadME/ideaUI1.png" alt="image-20220610220724844" style="zoom:25%;" />
 
 ↑ 可以在進入界面，引導用戶進行起始設定(Initialize)，比如選擇甚麼字典、界面風格、加入交流等基本設置。
 
-<img src="C:\Users\oscar\AppData\Roaming\Typora\typora-user-images\image-20220610220939386.png" alt="image-20220610220939386" style="zoom:25%;" />
+<img src="./images_ReadME/ideaUI2.png" alt="image-20220610220939386" style="zoom:25%;" />
 
-<img src="C:\Users\oscar\AppData\Roaming\Typora\typora-user-images\image-20220610221005873.png" alt="image-20220610221005873" style="zoom:25%;" />
+<img src="./images_ReadME/ideaUI3.png" alt="image-20220610221005873" style="zoom:25%;" />
 
 ↑ 詳見上方右側解述
 
-## 
+<br><br>
 
 ## 字詞查詢
 
@@ -184,7 +184,7 @@ https://rmda.kulib.kyoto-u.ac.jp/item/rb00013243#?c=0&m=0&s=0&cv=0&r=0&xywh=-462
 
 #### 古碑文查詢閱讀
 
-<img src="C:\Users\oscar\AppData\Roaming\Typora\typora-user-images\image-20220610233832121.png" alt="image-20220610233832121" style="zoom:25%;" />
+<img src="./images_ReadME/inscription.jpg" alt="image-20220610233832121" style="zoom:25%;" />
 
 ↑ 圖片+文字釋讀
 
@@ -192,7 +192,7 @@ https://rmda.kulib.kyoto-u.ac.jp/item/rb00013243#?c=0&m=0&s=0&cv=0&r=0&xywh=-462
 - 學者可以直接查詢
 - 例子：史墻盤、蒼頡篇、毛公鼎等...
 
-
+<br><br>
 
 ## 介面管理
 
